@@ -1,52 +1,52 @@
-    # getting file from passed arguments
-    print(dir_)
 for dir_ in get_dirs(path):
-def read_list():
-path = "/home/telix/"
-        wiki_graph.add_node(node)
-        print("done")
-        read the list of urls and set the titlte of the article as node in the graph
-    print('reading from file: ' + filename )
-    wiki_graph = nx.DiGraph()
-    # opening file 
-    '''
-    '''
-        # for every url get the article name with regex
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        # add node to graph
-import sys, os
-def get_dirs(path):
-dirs = os.listdir( path )
-    ''' This would print all the files and directories '''
-    nx.write_gpickle(wiki_graph, "wiki_graph_data.nx")
-    # save graph   
-import re
-    # graph structure for storing the wikipedia nodes
-        # read line from file
-    
-import sys
-import networkx as nx
-        node =  re.search('(?=\/)/[^/]*$', line).group()
-    for line in content:
-        print("adding node : " + node )
-import pickle
-    return  [f.path for f in os.scandir(path) if f.is_dir()]
-        content = f.readlines()
     with open(filename) as f:
-import datetime
+    # save graph   
+path = "/home/telix/"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dirs = os.listdir( path )
+    print(dir_)
+    return  [f.path for f in os.scandir(path) if f.is_dir()]
+        read the list of urls and set the titlte of the article as node in the graph
+        content = f.readlines()
+        # add node to graph
+    nx.write_gpickle(wiki_graph, "wiki_graph_data.nx")
 # A program which 
-#!/usr/bin/python
+    ''' This would print all the files and directories '''
+    for line in content:
+import sys, os
+    '''
+    '''
+import datetime
+        print("adding node : " + node )
+import re
+    # getting file from passed arguments
+def get_dirs(path):
+    print('reading from file: ' + filename )
+    
+    # opening file 
+    # graph structure for storing the wikipedia nodes
+        print("done")
+    wiki_graph = nx.DiGraph()
+def read_list():
+import sys
+        node =  re.search('(?=\/)/[^/]*$', line).group()
     filename =  sys.argv[1]
+        # for every url get the article name with regex
+#!/usr/bin/python
+import pickle
+import networkx as nx
+        wiki_graph.add_node(node)
+        # read line from file
